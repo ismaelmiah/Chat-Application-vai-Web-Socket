@@ -1,0 +1,37 @@
+{
+  "name": "Message",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "seenBy": {
+      "type": "object"
+    },
+    "userId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Thread": {
+      "type": "belongsTo",
+      "model": "Thread",
+      "foreignKey": "threadId"
+    }, 
+    "User": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

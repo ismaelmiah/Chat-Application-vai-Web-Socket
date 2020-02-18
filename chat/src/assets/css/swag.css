@@ -1,0 +1,163 @@
+.form-wrapper{
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 2px 15px rgba(0,0,0,.3);
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background: #fff;   
+}
+
+.App{
+    background: #eee;
+}
+
+.btn {
+    padding: 5px 30px !important;
+    border-radius: 50px !important;
+}
+
+.sidebar{
+    background: #fff;
+    float: left;
+    width: 300px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 0px;
+}
+
+.main-view{
+    position: fixed;
+    left: 300px;
+    background: #fafafa;
+    height: 100vh;
+    width: calc(100% - 300px);
+    top: 0;
+    height: calc(100vh - 42px);
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+.thread-list{
+    list-style: none;
+    padding: 0px;
+}
+
+ul.thread-list li a .zmdi{
+    float: left;
+    font-size: 48px;
+    padding: 5px 15px;
+    color: #ccc;
+}
+
+ul.thread-list li  a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    height: 58px;
+    transition: background, border .3s;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+ul.thread-list li  a:hover {
+    background: #eee;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+ h5{
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+ul.thread-list li a p{
+    font-size: 14p;
+    color: #999;
+}
+
+ul.thread-list label{
+    padding-left: 20px;
+    font-size: 12px;
+    color: #aaa;
+    padding-top: 10px;
+}
+
+.input-view{
+    position: fixed;
+    left: 300px;
+    width: calc(100% - 300px);
+    bottom: 0px;
+}
+
+.input-view .form-control{
+    border: none;
+    border-radius: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    font-size: 14px;
+    padding: 10px;
+    height: auto;
+}
+
+.search-container .input-group{
+    margin: 20px;
+    width: calc(100% - 40px);
+    border-radius: 30px;
+}
+
+.search-container .input-group .btn.btn-search{
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: background .3s;
+    padding: 5px 15px !important;
+}
+
+.search-container .input-group .btn.btn-search:hover{
+    background: #ddd;
+}
+
+.message-item {
+    padding: 10px;
+}
+
+.msg-right{
+    text-align: right;
+}
+
+.zmdi-account-circle{
+    float: left;
+    margin-top: 5px;
+    font-size: 32px;
+    color: #aaa;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.message-item.msg-right .zmdi.zmdi-account-circle{
+    float: right;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.message-item .chat-bubble{
+    max-width: 600px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    background: #ddd;
+    padding-top: 5px;
+}
+
+.message-item.msg-right .chat-bubble{
+    background: #1d8ff1;
+    color: #fff; 
+}
