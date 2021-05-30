@@ -20,7 +20,7 @@
     "loopback-connector-mongodb": "^4.2.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0",
-    "ws": "^7.2.1"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "eslint": "^4.18.2",
